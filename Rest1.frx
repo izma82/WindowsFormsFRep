@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="01/20/2022 13:23:50" ReportInfo.Modified="01/20/2022 13:25:40" ReportInfo.CreatorVersion="2018.2.0.0">
+  <Styles Name="Sand">
+    <Style Name="Title" Font="Arial, 12pt, style=Bold"/>
+    <Style Name="Header" Fill.Color="Moccasin" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Group" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Data"/>
+    <Style Name="Footer" Fill.Color="Moccasin"/>
+    <Style Name="EvenRows" Fill.Color="FloralWhite"/>
+  </Styles>
+  <Dictionary>
+    <BusinessObjectDataSource Name="fields" ReferenceName="fields" DataType="System.Collections.Generic.List`1[[WindowsFormsFRep.Model.Fields, WindowsFormsFRep, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="Calc" DataType="System.String"/>
+      <Column Name="Calcname" DataType="System.String"/>
+      <Column Name="Count" DataType="System.String"/>
+    </BusinessObjectDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Width="718.2" Height="37.8" Dock="Fill" Text="Остатки по видам продукции" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt, style=Bold" Style="Title"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Width="245.7" Height="18.9" Fill.Color="Moccasin" Text="Тип продукции" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text5" Left="245.7" Width="236.25" Height="18.9" Fill.Color="Moccasin" Text="Наименование продукции" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text7" Left="481.95" Width="236.25" Height="18.9" Fill.Color="Moccasin" Text="Количество Проб" Font="Arial, 10pt, style=Bold" Style="Header"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="18.9" EvenStyle="EvenRows" DataSource="fields">
+      <TextObject Name="Text2" Width="245.7" Height="18.9" Text="[fields.Calc]" Style="Data"/>
+      <TextObject Name="Text4" Left="245.7" Width="236.25" Height="18.9" Text="[fields.Calcname]" Style="Data"/>
+      <TextObject Name="Text6" Left="481.95" Width="236.25" Height="18.9" Text="[fields.Count]" Style="Data"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="97.05" Width="718.2" Height="18.9">
+      <TextObject Name="Text8" Width="718.2" Height="18.9" Dock="Fill" Fill.Color="Moccasin" Text="[PageN]" HorzAlign="Right" Style="Footer"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>
