@@ -40,7 +40,7 @@ namespace WindowsFormsFRep
 
         private void button2_Click(object sender, EventArgs e)
         {
-            _fields = new BindingListView<Fields>(dataBaseAccessService.SelectFieldsFromDateBase(dateTimePicker1.Value.ToString("dd'/'MM'/'yyyy"), dateTimePicker2.Value.ToString("dd'/'MM'/'yyyy")).);
+            _fields = new BindingListView<Fields>(dataBaseAccessService.SelectFieldsFromDateBase(dateTimePicker1.Value.ToString("dd'/'MM'/'yyyy"), dateTimePicker2.Value.ToString("dd'/'MM'/'yyyy")));
             dataGridView.DataSource = _fields;
 
             Font F = new Font("Arial", 11);
