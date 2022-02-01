@@ -51,6 +51,9 @@
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
     </Reference>
+    <Reference Include="Equin.ApplicationFramework.BindingListView, Version=1.4.5222.35545, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Equin.ApplicationFramework.BindingListView.1.4.5222.35545\lib\net40-Client\Equin.ApplicationFramework.BindingListView.dll</HintPath>
+    </Reference>
     <Reference Include="FastReport, Version=2018.2.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
     <Reference Include="FastReport.Bars, Version=2018.2.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
     <Reference Include="FastReport.Editor, Version=2018.2.0.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
@@ -94,6 +97,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\WindowsFormsFRep.Model.Fields.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

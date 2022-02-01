@@ -1,10 +1,7 @@
-﻿using System;
+﻿using Dapper;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.OleDb;
-using Dapper;
+using System.Linq;
 using WindowsFormsFRep.Model;
 
 namespace WindowsFormsFRep.Service
