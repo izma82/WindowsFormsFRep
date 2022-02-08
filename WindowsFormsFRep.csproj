@@ -48,6 +48,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.DataCollection, Version=1.0.20213.62, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>packages\C1.DataCollection.1.0.20213.62\lib\netstandard1.1\C1.DataCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.DataCollection.BindingList, Version=1.0.20213.62, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>packages\C1.DataCollection.BindingList.1.0.20213.62\lib\net452\C1.DataCollection.BindingList.dll</HintPath>
+    </Reference>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
     </Reference>
